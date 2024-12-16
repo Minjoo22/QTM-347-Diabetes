@@ -23,12 +23,12 @@ The experimental setup involves splitting the data into training and testing set
 
 4. Model Selection
 
-5. Random Forest
-
 We evaluated five machine learning models—Logistic Regression, K-Nearest Neighbors (KNN), Decision Tree, Random Forest, and Neural Network—using various performance metrics, including Accuracy, Precision, Recall, F1 Score, ROC AUC, and Cross-Validation (CV) Mean and Standard Deviation.
 
 Based on the results, Random Forest was identified as the best-performing model. It achieved the highest Recall (0.7091), F1 Score (0.6667), ROC AUC (0.8349), and Cross-Validation Mean (0.7753), demonstrating robustness across multiple metrics. While Logistic Regression attained the highest Accuracy (0.7532), this result may be influenced by the imbalance in the outcome variable, which can skew accuracy as a reliable measure.
 Given its consistent performance across Recall, ROC AUC, and Cross-Validation metrics, we selected Random Forest as the optimal model for the remainder of our analysis. This model's ability to balance precision and recall makes it particularly suitable for identifying individuals at risk of diabetes.
+
+5. Random Forest
 
 6. Feature Importance
 
