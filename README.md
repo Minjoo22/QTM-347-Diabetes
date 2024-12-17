@@ -1,4 +1,5 @@
 # What Factors Might Influence the Risk of Getting Diabetes?
+## Minjoo Kim, Zoey Zeng, Laura Wang, Jennifer Liu
 
 ## Abstract
 Diabetes remains a critical public health issue, particularly in Georgia, where it affects nearly 1 million individuals and places a significant burden on healthcare systems. This study leverages machine learning models, including Logistic Regression, K-Nearest Neighbors, Decision Trees, Random Forest, and Neural Networks, to analyze key predictors of diabetes using the Pima Indians Diabetes Database. By examining physiological, demographic, and genetic factors such as glucose levels, BMI, and age, we identify critical contributors to diabetes risk and assess the performance of various predictive models. Our findings provide insights into diabetes progression and offer actionable knowledge to inform prevention and intervention strategies.
@@ -13,7 +14,6 @@ From the pairplot, we observe that Glucose and BMI have a strong visual relation
 
 The experimental setup involves splitting the data into training and testing sets using an 80-20 ratio. Data cleaning was performed by replacing zero values with the mean of each respective feature to handle missing or implausible entries. The models evaluated include Logistic Regression, K-Nearest Neighbors (KNN), Decision Tree, Random Forest, and a Neural Network, with performance assessed using K-fold cross-validation to ensure robustness. The experiments were executed in a standard computing environment with all necessary libraries and frameworks pre-installed.
 
-
 ## Results
 1. Cross-Validation
 
@@ -25,11 +25,13 @@ The experimental setup involves splitting the data into training and testing set
 
 We evaluated five machine learning models—Logistic Regression, K-Nearest Neighbors (KNN), Decision Tree, Random Forest, and Neural Network—using various performance metrics, including Accuracy, Precision, Recall, F1 Score, ROC AUC, and Cross-Validation (CV) Mean and Standard Deviation.
 
-Based on the results, Random Forest was identified as the best-performing model. It achieved the highest Recall (0.7091), F1 Score (0.6667), ROC AUC (0.8349), and Cross-Validation Mean (0.7753), demonstrating robustness across multiple metrics. While Logistic Regression attained the highest Accuracy (0.7532), this result may be influenced by the imbalance in the outcome variable, which can skew accuracy as a reliable measure.
+Based on the results, Random Forest was identified as the best-performing model. It achieved the highest Accuracy (0.7597), F1 Score (0.6667), ROC AUC (0.8254), and Cross-Validation Mean (0.7737), demonstrating robustness across multiple metrics. While Logistic Regression attained high Accuracy (0.7532) and the highest Precision (0.6667), this result may be influenced by the imbalance in the outcome variable, which can skew accuracy as a reliable measure.
 
-Given its consistent performance across Recall, ROC AUC, and Cross-Validation metrics, we selected Random Forest as the optimal model for the remainder of our analysis. This model's ability to balance precision and recall makes it particularly suitable for identifying individuals at risk of diabetes.
+Given its consistent performance across Accuracy, F1 Score, ROC AUC, and Cross-Validation metrics, we selected Random Forest as the optimal model for the remainder of our analysis. This model's ability to balance precision and recall makes it particularly suitable for identifying individuals at risk of diabetes.
 
 5. Random Forest
+
+To further optimize performance, we conducted a grid search on two critical hyperparameters—n_estimators (number of trees) and max_depth (maximum depth of each tree)—using the validation set to identify the best combination for the Random Forest model. The grid search systematically explored multiple values for these parameters, evaluating the model's performance on the validation set to avoid overfitting. The best-performing combination of parameters was selected, after which the model was trained on the full training set and evaluated on the test set. The optimized Random Forest achieved a training F1 score of 0.7116 and a test F1 score of 0.6733, indicating a good balance between learning the training data and generalizing to unseen data.
 
 6. Feature Importance
 
