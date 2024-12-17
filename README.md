@@ -14,6 +14,7 @@
     - [6. Feature Importance](#6-feature-importance)
 5. [Discussion](#discussion)
 6. [Conclusion](#conclusion)
+7. [References](#references)
 
 <img src="Figures/Figure1.png" alt="Figure 1" width="800"/>
 
@@ -36,12 +37,24 @@ The experimental setup involves splitting the data into training and testing set
 
 ## Results
 ### 1. Cross-Validation
+The cross-validation techniques employed, including Leave-One-Out Cross-Validation (LOOCV) and 5-fold Cross-Validation, provide a comprehensive evaluation of the logistic regression model's performance on the diabetes dataset.
+
+LOOCV yielded a precision of 71.77% and a recall of 55.97%. These results, alongside the confusion matrix, suggest a moderate ability of the model to correctly identify positive cases (precision) but a somewhat limited capacity to capture all actual positive instances (recall). The relatively high number of false negatives (118) compared to false positives (59) indicates a tendency for the model to under-predict the positive class. This is a common observation in imbalanced datasets like this one, where the negative class (non-diabetic) significantly outnumbers the positive class (diabetic).
+
 <img src="Figures/Figure5.png" alt="Figure 5" width="500"/>
 
+5-Fold Cross-Validation, on the other hand, presented an average accuracy of 76.96% with a standard deviation of 2.79%. This indicates a generally consistent performance across different subsets of the data, with the accuracy varying within a relatively narrow range. The low standard deviation suggests that the model's performance is stable and not highly sensitive to the specific composition of the training and validation sets in each fold.
+
 ### 2. KNN
-<img src="Figures/Figure6.png" alt="Figure 6" width="500"/>
+The K-Nearest Neighbors (KNN) algorithm was implemented to predict diabetes outcomes, with careful consideration given to feature standardization and hyperparameter optimization. The model's performance was rigorously assessed using 5-fold cross-validation, coupled with GridSearchCV to fine-tune the hyperparameters for optimal results, particularly focusing on the F1 score as the primary evaluation metric.
+
+<img src="Figures/Figure6.png" alt="Figure 6" width="600"/>
+
+<img src="Figures/Figure7.png" alt="Figure 7" width="500"/>
 
 ### 3. Decision Tree
+The Decision Tree model, a fundamental machine learning algorithm known for its interpretability, was trained and evaluated on the diabetes dataset. To optimize its performance, hyperparameter tuning was conducted using GridSearchCV in conjunction with 5-fold cross-validation, focusing on the F1-score as the key metric for selecting the best model.
+
 <img src="Figures/Figure8.png" alt="Figure 8" width="500"/>
 
 ### 4. Model Selection
@@ -70,3 +83,6 @@ Glucose is the most significant feature, reflecting its central role in diagnosi
 
 
 ## Conclusion
+
+
+## References
