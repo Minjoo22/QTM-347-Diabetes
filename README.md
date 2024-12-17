@@ -129,7 +129,7 @@ Despite our promising results, certain limitations must be acknowledged. The dat
 
 In the future, we could try to use larger and more diverse datasets to mitigate these issues, incorporating feature engineering techniques to address potential biases. Additionally, longitudinal data could be used to analyze temporal trends and causal relationships, providing deeper insights into the progression of diabetes. We could also incorporate external validation in our research, testing these models on an entirely separate dataset to make the outcome more applicable in other scenarios.
 
-In comparison to existing approaches, our results align closely with published studies on diabetes prediction using machine learning. Many studies highlight the dominance of tree-based models like Random Forest and Gradient Boosting in capturing non-linear interactions, further validating our findings. Future work could explore advanced ensemble methods, such as XGBoost or LightGBM, and incorporate additional data sources, including genetic markers, lifestyle factors, and temporal data for longitudinal analysis
+In comparison to existing approaches, our results align closely with published studies on diabetes prediction using machine learning. Many studies highlight the dominance of tree-based models like Random Forest and Gradient Boosting in capturing non-linear interactions, further validating our findings. For instance, Kavakiotis et al. (2017) in their study titled “Machine Learning and Data Mining Methods in Diabetes Research” (Computational and Structural Biotechnology Journal) highlight the dominance of tree-based models, such as Random Forest and Gradient Boosting, in capturing non-linear interactions and achieving reliable predictive performance. Future work could explore advanced ensemble methods, such as XGBoost or LightGBM, and incorporate additional data sources, including genetic markers, lifestyle factors, and temporal data for longitudinal analysis.
 
 ## Conclusion
 In this project, we investigated the factors influencing diabetes risk using machine learning techniques and the Pima Indians Diabetes Database. By applying models such as Logistic Regression, K-Nearest Neighbors, Decision Tree, Random Forest, and Neural Network, we identified Glucose, BMI, and Age as the most significant predictors of diabetes.
@@ -139,3 +139,6 @@ Among the models tested, Random Forest was selected as the optimal model due to 
 Our findings contribute to a deeper understanding of diabetes risk factors and highlight the importance of machine learning in healthcare analytics. By leveraging these insights, future studies can develop more effective prevention and intervention strategies, ultimately improving health outcomes for at-risk populations.
 
 ## References
+1. https://www.cdc.gov/diabetes/communication-resources/diabetes-statistics.html
+2. https://www.cdc.gov/diabetes/php/data-research/index.html
+3. https://pubmed.ncbi.nlm.nih.gov/28138367/
