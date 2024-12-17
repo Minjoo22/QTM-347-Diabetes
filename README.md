@@ -15,8 +15,7 @@
 5. [Discussion](#discussion)
 6. [Conclusion](#conclusion)
 
-
-![Description](Figures/Figure1.png)
+<img src="Figures/Figure1.png" alt="Figure 1" width="800"/>
 
 ## Abstract
 Diabetes remains a critical public health issue, particularly in Georgia, where it affects nearly 1 million individuals and places a significant burden on healthcare systems. This study leverages machine learning models, including Logistic Regression, K-Nearest Neighbors, Decision Trees, Random Forest, and Neural Networks, to analyze key predictors of diabetes using the Pima Indians Diabetes Database. By examining physiological, demographic, and genetic factors such as glucose levels, BMI, and age, we identify critical contributors to diabetes risk and assess the performance of various predictive models. Our findings provide insights into diabetes progression and offer actionable knowledge to inform prevention and intervention strategies.
@@ -27,7 +26,7 @@ Diabetes remains a critical public health issue, particularly in Georgia, where 
 ## Dataset and Setup
 The dataset used for this experiment is the Pima Indians Diabetes Database sourced from Kaggle, comprising 768 rows and 9 columns. The dataset includes variables such as the number of pregnancies, plasma glucose concentration, diastolic blood pressure, triceps skin fold thickness, 2-hour serum insulin, body mass index (BMI), diabetes pedigree function (a measure of genetic influence), age, and the outcome variable indicating diabetes diagnosis (0 = No, 1 = Yes). The dataset is imbalanced, with 500 non-diabetic cases (65%) and 268 diabetic cases (35%).
 
-<img src="Figures/Figure2.png" alt="Figure 2" width="500"/>
+<img src="Figures/Figure2.png" alt="Figure 2" width="450"/>
 
 From the pairplot, we observe that Glucose and BMI have a strong visual relationship with Outcome, and features like Insulin and SkinThickness contain outliers. The diagonal histograms also show that Pregnancies and Insulin are highly skewed, indicating potential preprocessing needs. The heatmap further quantifies these relationships. Glucose has the strongest correlation with Outcome (0.49), making it a key predictor. Variables like BMI and Age followed with a strong correlation to Outcome. While some features have notable correlations, others, like DiabetesPedigreeFunction and BloodPressure, show weak associations with Outcome. This analysis guides feature importance evaluation and model refinement.
 
@@ -37,10 +36,13 @@ The experimental setup involves splitting the data into training and testing set
 
 ## Results
 ### 1. Cross-Validation
+<img src="Figures/Figure5.png" alt="Figure 5" width="500"/>
 
 ### 2. KNN
+<img src="Figures/Figure6.png" alt="Figure 6" width="500"/>
 
 ### 3. Decision Tree
+<img src="Figures/Figure8.png" alt="Figure 8" width="500"/>
 
 ### 4. Model Selection
 
