@@ -1,5 +1,5 @@
 # What Factors Might Influence the Risk of Getting Diabetes?
-## Minjoo Kim, Zoey Zeng, Laura Wang, Jennifer Liu
+## Minjoo Kim, Zoey Zeng, Jennifer Liu, Laura Wang
 
 ## Table of Contents
 1. [Abstract](#abstract)
