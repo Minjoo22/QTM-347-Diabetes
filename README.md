@@ -31,7 +31,7 @@ The dataset used for this experiment is the Pima Indians Diabetes Database sourc
 
 From the pairplot, we observe that Glucose and BMI have a strong visual relationship with Outcome, and features like Insulin and SkinThickness contain outliers. The diagonal histograms also show that Pregnancies and Insulin are highly skewed, indicating potential preprocessing needs. The heatmap further quantifies these relationships. Glucose has the strongest correlation with Outcome (0.49), making it a key predictor. Variables like BMI and Age followed with a strong correlation to Outcome. While some features have notable correlations, others, like DiabetesPedigreeFunction and BloodPressure, show weak associations with Outcome. This analysis guides feature importance evaluation and model refinement.
 
-<img src="Figures/Figure3.png" alt="Figure 3" width="450"/> <img src="Figures/Figure4.png" alt="Figure 4" width="450"/>
+<img src="Figures/Figure3.png" alt="Figure 3" width="350"/> <img src="Figures/Figure4.png" alt="Figure 4" width="350"/>
 
 The experimental setup involves splitting the data into training and testing sets using an 80-20 ratio. Data cleaning was performed by replacing zero values with the mean of each respective feature to handle missing or implausible entries. The models evaluated include Logistic Regression, K-Nearest Neighbors (KNN), Decision Tree, Random Forest, and a Neural Network, with performance assessed using K-fold cross-validation to ensure robustness. The experiments were executed in a standard computing environment with all necessary libraries and frameworks pre-installed.
 
