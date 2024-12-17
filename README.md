@@ -73,7 +73,7 @@ The analysis of KNN performance across different k-values, specifically using th
 ### 3. Decision Tree
 The Decision Tree model, a fundamental machine learning algorithm known for its interpretability, was trained and evaluated on the diabetes dataset. To optimize its performance, hyperparameter tuning was conducted using GridSearchCV in conjunction with 5-fold cross-validation, focusing on the F1-score as the key metric for selecting the best model.
 
-<img src="Figures/Figure8.png" alt="Figure 8" width="500"/>
+<img src="Figures/Figure8.png" alt="Figure 8" width="800"/>
 
 ### Optimal Hyperparameter Configuration:
 The GridSearchCV process systematically explored different combinations of hyperparameters, ultimately pinpointing the following optimal settings for the Decision Tree:
